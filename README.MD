@@ -3,19 +3,19 @@ Chat Server
 
 Spring Boot App that implements a simple chat server.
 
-Functionality:
+## Functionality:
 
-- chat server listens on port configured by 'chat.server.port' property.
+Chat server listens on port configured by 'chat.server.port' property.
 
 The protocol is extremely simple. Clients send and receive messages as line terminated strings.
 Clients remain connected and can send any number of messages until they send a special 'bye' message.
 The 'bye' message tells the server to terminate the connection. 
 
-To run the client simply run the boot app in the usual way. For example in
+To start the chat server simply run the boot app in the usual way. For example in
 STS you can just click the 'start' button in the boot dash. On the commandline you can
 run `mvn spring-boot:run`.
 
-To connect to the server use 'telnet':
+To connect to the server use 'telnet' as the client:
 
 ```
 telnet localhost 6677
